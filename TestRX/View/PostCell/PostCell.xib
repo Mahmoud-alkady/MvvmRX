@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="241" id="c9e-uE-UBH" customClass="PostCell" customModule="TestRX">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="241"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c9e-uE-UBH" id="lnw-vk-Mo7">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="241"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z8n-UL-ROg">
+                        <rect key="frame" x="25" y="11" width="309" height="219"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ptE-X9-8Wt">
+                                <rect key="frame" x="0.0" y="0.0" width="309" height="44"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="CUI-4z-GbD">
+                                        <rect key="frame" x="0.0" y="6" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="CUI-4z-GbD" secondAttribute="height" id="elS-H9-htc"/>
+                                            <constraint firstAttribute="height" constant="32" id="l5k-Em-jFk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUL-Xe-FrB">
+                                        <rect key="frame" x="42" y="13.5" width="200.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Yld-tK-svp">
+                                        <rect key="frame" x="252.5" y="14" width="56.5" height="16"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfd-cD-IzZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Kfd-cD-IzZ" secondAttribute="height" id="W0z-6K-M5c"/>
+                                                    <constraint firstAttribute="width" constant="16" id="XQf-JQ-xUn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TT4-V0-3kZ">
+                                                <rect key="frame" x="21" y="0.0" width="35.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-16-9" translatesAutoresizingMaskIntoConstraints="NO" id="uWd-Ri-nNm">
+                                <rect key="frame" x="0.0" y="54" width="309" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uWd-Ri-nNm" secondAttribute="height" multiplier="16:9" constant="16" id="U6x-uz-IT3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Z8n-UL-ROg" secondAttribute="bottom" id="HIE-Tj-0gj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Z8n-UL-ROg" secondAttribute="trailing" constant="5" id="OWI-cj-hPv"/>
+                    <constraint firstItem="Z8n-UL-ROg" firstAttribute="leading" secondItem="lnw-vk-Mo7" secondAttribute="leadingMargin" constant="5" id="kgk-MY-XI5"/>
+                    <constraint firstItem="Z8n-UL-ROg" firstAttribute="top" secondItem="lnw-vk-Mo7" secondAttribute="topMargin" id="uM9-vU-p9J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="0ob-WX-NhW"/>
+            <connections>
+                <outlet property="likes" destination="TT4-V0-3kZ" id="L3r-d5-CZL"/>
+                <outlet property="postImage" destination="uWd-Ri-nNm" id="eXV-Xh-1aI"/>
+                <outlet property="profileImage" destination="CUI-4z-GbD" id="ejj-1u-9wf"/>
+                <outlet property="userName" destination="XUL-Xe-FrB" id="Ts5-fr-ElM"/>
+            </connections>
+            <point key="canvasLocation" x="165.94202898550725" y="200.55803571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart.fill" width="32" height="32"/>
+        <image name="placeholder-16-9" width="800" height="450"/>
+        <image name="profile" width="100" height="100"/>
+    </resources>
+</document>
